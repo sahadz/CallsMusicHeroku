@@ -4,7 +4,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
 @Client.on_message(
     filters.command("start")
-    #& filters.group
+    & filters.group
     & ~ filters.edited
 )
 async def start(client: Client, message: Message):
